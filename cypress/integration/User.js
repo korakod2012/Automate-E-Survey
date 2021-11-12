@@ -9,8 +9,8 @@ describe("For User", () => {
     return Math.floor(Math.random() * totalChoice) + 1;
   }
 
-  const userName = "Korakod_AutoCreate_ivk";
-  const activationCode = "cgFJAWkYPE";
+  const userName = "Korakod_AutoCreate_0zx";
+  const activationCode = "cTRRfMThMz";
   const password = "Password@1";
   const email = "kod@somedomain.com";
 

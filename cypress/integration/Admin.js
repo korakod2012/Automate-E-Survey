@@ -8,29 +8,9 @@ describe("For Admin", () => {
     cy.visit("http://api-uat-k8s-01.teda.th/admin/");
   });
 
-  // it("Login success", () => {
-  //   cy.xpath("//input[@name='username']").type("admin");
-  //   cy.xpath("//input[@name='password']").type("1234");
-  //   cy.xpath("//button[@name='login']").click();
-  //   cy.xpath("//*[contains(text(),'UserManagement')]").contains(
-  //     "UserManagement"
-  //   );
-  // });
-
-  // it.only("Not able login if wrong user", () => {
-  //   cy.xpath("//input[@name='username']").type("admin99");
-  //   cy.xpath("//input[@name='password']").type("1234");
-  //   // cy.xpath("//button[@name='login']").click();
-  //   cy.xpath("//button[@name='login']").debug().click();
-  // });
-
-  // it("Not able login if wrong password", () => {});
-  // it("Not able login if empty user", () => {});
-  // it("Not able login if empty password", () => {});
-
   it("Admin Create user", () => {
     cy.xpath("//input[@name='username']").type("admin");
-    cy.xpath("//input[@name='password']").type("1234");
+    cy.xpath("//input[@name='password']").type("P@ssw0rd@Etda");
     cy.xpath("//button[@name='login']").click();
 
     cy.xpath(
